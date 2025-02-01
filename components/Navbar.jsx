@@ -13,7 +13,7 @@ export const Navbar = () => {
   const timeoutRef = useRef(null);
   const [hoveredItem, setHoveredItem] = useState("Home");
   const [bgPosition, setBgPosition] = useState(0);
-  const menuRefs = useRef({}); // Store menu item refs
+  const menuRefs = useRef({}); // Store menu item refss--------------------------------------------------
 
   const menuItems = ["Home", "Lifestyle", "Culture", "Future","About Us", "Contact"];
   const dropdownItems = {
@@ -21,7 +21,7 @@ export const Navbar = () => {
     Future: ["Post Layouts", "Post Formates", "Archive", "Author Page"],
   };
 
-  // Adjust background position dynamically
+  // Adjust background position dynamically-----------------------------------------------------------------------------
   useEffect(() => {
     if (menuRefs.current[hoveredItem]) {
       const item = menuRefs.current[hoveredItem];
@@ -39,9 +39,9 @@ export const Navbar = () => {
               MM-BLOG<span className="text-pink-500">.</span>
             </h1>
 
-            {/* Menu Items */}
+            {/* Menu Items --------------------------------------------------------------------------- */}
             <div className="relative hidden lg:flex items-center gap-4 text-gray-600">
-              {/* Moving Background */}
+              {/* Moving Background -------------------------------------------------------------------------------------------------- */}
               <motion.div
                 className="absolute top-1/2 -translate-y-1/2 h-10 w-24 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 text-white transition-all duration-300"
                 animate={{ left: bgPosition }}
@@ -78,7 +78,7 @@ export const Navbar = () => {
                           key={subItem}
                           className="px-4 py-2 cursor-pointer transition-transform duration-500 transform hover:translate-x-2 hover:rotate-1  hover:text-pink-600"
                           onClick={() => {
-                            // Handle subitem click if needed
+                            
                             console.log(`Clicked on ${subItem}`);
                           }}
                         >
@@ -92,7 +92,7 @@ export const Navbar = () => {
             </div>
           </div>
 
-          {/* Right Section - Icons */}
+          {/* Right Section - Icons ------------------------------------------------------------------------- */}
           <div className="flex items-center gap-4">
             <button 
               onClick={() => router.push("/search")}
@@ -110,7 +110,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* Sidebar Component */}
+      {/* Sidebar Component------------------------------------------------------------------------------------------------------ */}
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
     </>
   );
