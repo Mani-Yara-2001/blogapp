@@ -1,6 +1,9 @@
 
 
-## Getting Started
+## Getting Started   
+
+Check If the node is installed or not in your pc 
+
 
 ```bash
 npm install
