@@ -17,13 +17,13 @@ npm install
 
 ```
 
-# after
+after
 ```bash
 
 npm run build
 
 ```
-# after
+after
 ```bash
 
 npm start
