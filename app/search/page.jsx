@@ -65,7 +65,7 @@ const Search = () => {
   return (
     <div className="min-h-[110vh] md:mt-[-10vh] mt-[-12vh] lg:mt-[-20vh] xl:mt-[-10vh] z-[999] sticky top-0 flex flex-col items-center justify-center bg-white p-4">
 
-      {/* Close Button */}
+      {/* Close Button -------------------------------------------------*/}
       <button
         onClick={handleClose}
         className="absolute top-4 right-4 md:text-2xl text-xl text-black p-2 block md:block "
@@ -76,7 +76,7 @@ const Search = () => {
 
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Search</h1>
 
-      {/* Search Input */}
+      {/* Search Input----------------------------------------------------------- */}
       <div className="relative w-full max-w-md mb-6">
         <input
           type="text"
