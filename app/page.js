@@ -10,7 +10,7 @@ const Page = () => {
   const [blogs, setBlogs] = useState([]);
   const [visibleBlogs, setVisibleBlogs] = useState(6);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null); // New error state
+  const [error, setError] = useState(null); 
   const [showShare, setShowShare] = useState(null);
   const [loadMoreLoading, setLoadMoreLoading] = useState(false);
 
@@ -18,7 +18,7 @@ const Page = () => {
     const fetchBlogs = async () => {
       try {
         setLoading(true);
-        setError(null); // Reset error before fetching
+        setError(null); 
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -29,7 +29,7 @@ const Page = () => {
         setBlogs(data?.data || []);
       } catch (error) {
         console.error("Error fetching data:", error);
-        setError("Failed to load blogs. Please try again later."); // Set error message
+        setError("Failed to load blogs. Please try again later."); 
       } finally {
         setLoading(false);
       }
