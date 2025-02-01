@@ -4,6 +4,13 @@
 
 Check If the node is installed or not in your pc 
 
+Check the file path in the terminal if it's not perfect type this,
+if the path is ok then no need of this 
+
+```bash
+cd blogapp-master
+```
+
 
 ```bash
 npm install
