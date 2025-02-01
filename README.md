@@ -7,8 +7,15 @@ Check If the node is installed or not in your pc
 
 ```bash
 npm install
+
+```
+```bash
+
 # after
 npm run build
+
+```
+```bash
 # after
 npm start
 
