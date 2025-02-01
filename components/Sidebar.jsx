@@ -13,10 +13,10 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   return (
     <>
-      {/* Overlay */}
+      
       {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={onClose} />}
 
-      {/* Sidebar Panel */}
+      {/* Sidebar Panel ----------------------------------------------------------------------------------*/}
       <motion.div
         initial={{ x: "100%" }}
         animate={{ x: isOpen ? "0%" : "100%" }}
@@ -24,19 +24,19 @@ const Sidebar = ({ isOpen, onClose }) => {
         transition={{ duration: 0.3, ease: "easeOut" }}
         className="fixed top-0 flext justify-between flex-col right-0 h-full w-4/5 sm:w-1/3 lg:w-1/4 bg-white shadow-lg z-50 p-6"
       >
-        {/* Close Button */}
+        {/* Close Button ------------===--------------------------------------------------*/}
         <button onClick={onClose} className="absolute top-4 right-4 text-gray-600">
           <FaTimes size={22} />
         </button>
 
-        {/* Logo */}
+        {/* Logo=-------------------------------------------------------------------------------------------------------------- */}
         <h1 className="text-2xl font-bold text-blue-900 mb-8">
           MM-Blog<span className="text-pink-500">.</span>
         </h1>
 
-        {/* Menu Items */}
+        
         <ul className="space-y-4 mt-20 text-gray-700 text-lg font-medium">
-          {/* Home with Dropdown */}
+          {/* Home with Dropdown----------------------------------------------------------------=---------------------------- */}
           <li className="flex items-center justify-between cursor-pointer hover:text-pink-600 ">
             Home
             <button onClick={() => toggleDropdown("home")} className="p-2">
@@ -61,7 +61,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <li className="cursor-pointer hover:text-pink-600">Lifestyle</li>
           <li className="cursor-pointer hover:text-pink-600">Culture</li>
 
-          {/* Features with Dropdown */}
+          {/* Features with Dropdown -----------------------------------------------------------------------------------------------------------*/}
           <li className="flex items-center justify-between cursor-pointer">
             Features
             <button onClick={() => toggleDropdown("features")} className="p-2">
@@ -85,7 +85,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <li className="cursor-pointer hover:text-pink-500">Contact</li>
         </ul>
 
-        {/* Social Media Icons */}
+        
         <div className="mt-20 flex gap-4 text-gray-700">
           <FaFacebookF className="cursor-pointer hover:text-pink-500" size={20} />
           <FaTwitter className="cursor-pointer hover:text-pink-500" size={20} />
