@@ -2,15 +2,15 @@
 
 ## Getting Started   
 
-Check If the node is installed or not in your pc 
 
-Check the file path in the terminal if it's not perfect type this,
-if the path is ok then no need of this 
+
+Ensure you're in the correct directory. If you're not, navigate to the correct folder:
 
 ```bash
 cd blogapp-master
 ```
 
+Once you're in the correct folder, run:
 
 ```bash
 npm install
