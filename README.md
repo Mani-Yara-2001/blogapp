@@ -16,14 +16,16 @@ Once you're in the correct folder, run:
 npm install
 
 ```
-```bash
 
 # after
+```bash
+
 npm run build
 
 ```
-```bash
 # after
+```bash
+
 npm start
 
 ```
